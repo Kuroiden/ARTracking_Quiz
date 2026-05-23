@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ARTrackingManager : Singleton<ARTrackingManager>
 {
+    public IARTrackingMode CurrentMode => _currentTrackingMode;
+
     [SerializeField]
     private List<MonoBehaviour> _trackingReferences; 
 
