@@ -11,13 +11,13 @@ public class ScreenView : MonoBehaviour, IScreenView
 
     public bool IsVisible => _isVisible;
 
-    public void HideView()
+    public virtual void HideView()
     {
         _isVisible = false;
         gameObject.SetActive(false);
     }
 
-    public void ShowView()
+    public virtual void ShowView()
     {
         _isVisible = true;
         gameObject.SetActive(true);

@@ -439,6 +439,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751579cb4011d11419fc52934e395cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ARTrackingManager
+  _trackingReferences:
+  - {fileID: 591953225}
+  - {fileID: 591953224}
+  - {fileID: 591953218}
 --- !u!114 &591953222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27834070fb5fbd94ea89e23cff87e6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ImageTrackingMode
-  _trackedImageManager: {fileID: 0}
+  _trackedImageManager: {fileID: 591953220}
   _trackedImageDatas: []
 --- !u!114 &591953225
 MonoBehaviour:
@@ -498,9 +502,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2da566b99e7f0d45b5e9e5c681d43a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneTrackingMode
-  _planeManager: {fileID: 0}
+  _planeManager: {fileID: 591953222}
   _prefabToSpawnFromPlane: {fileID: 0}
-  _raycastManager: {fileID: 0}
+  _raycastManager: {fileID: 591953223}
 --- !u!1 &631040436
 GameObject:
   m_ObjectHideFlags: 0
