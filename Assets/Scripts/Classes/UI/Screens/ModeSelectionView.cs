@@ -13,6 +13,8 @@ public class ModeSelectionView : ScreenView
     {
         base.ShowView();
         RegisterListeners();
+
+        Debug.Log($"Resetting Menu...");
     }
 
     public override void HideView()
@@ -27,6 +29,8 @@ public class ModeSelectionView : ScreenView
 
         if (_imageTrackingButton != null)
             _imageTrackingButton.onClick.AddListener(OnImageTrackingSelected);
+
+        Debug.Log($"Listeners registered");
     }
 
     private void RemoveListeners()
@@ -36,6 +40,8 @@ public class ModeSelectionView : ScreenView
 
         if (_imageTrackingButton != null)
             _imageTrackingButton.onClick.RemoveListener(OnImageTrackingSelected);
+
+        Debug.LogWarning($"Listeners removed");
     }
 
     private void OnPlaneTrackingSelected()

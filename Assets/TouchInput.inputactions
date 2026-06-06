@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "TouchInput",
+    "maps": [
+        {
+            "name": "AR Input Actions",
+            "id": "c5324a77-07b8-498a-a725-04db8767ba86",
+            "actions": [
+                {
+                    "name": "Spawn On Touch",
+                    "type": "Value",
+                    "id": "2bfe902a-46fb-463b-a01c-8a6c074033b5",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "498fb2bc-8bb5-4f84-867b-bc815845bba6",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spawn On Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

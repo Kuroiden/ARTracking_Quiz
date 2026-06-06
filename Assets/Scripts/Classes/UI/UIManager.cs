@@ -18,7 +18,10 @@ public class UIManager : Singleton<UIManager>
         foreach (var screenView in _screens.Values)
         {
             _screens.Add(screenView.ScreenType, screenView);
+            Debug.Log($"{screenView} Added to screen views");
         }
+
+        ShowScreen(UIScreenType.ModeSelection);
     }
 
     public void ShowScreen(UIScreenType targetScreenType)

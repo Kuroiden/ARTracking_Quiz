@@ -28,6 +28,8 @@ public class ARTrackingManager : Singleton<ARTrackingManager>
             return;
         }
 
+        Debug.Log($"Current mode: {_currentTrackingMode}");
+
         // This code will only be reached if target mode is a different mode
         // Disable the current mode
         _currentTrackingMode.DisableMode();
@@ -47,6 +49,7 @@ public class ARTrackingManager : Singleton<ARTrackingManager>
             // since _trackingReferences are MonoBehaviours we only need IARTrackingMode
             if (trackingReference is not IARTrackingMode trackingMode)
             {
+                Debug.LogWarning($"{trackingReference} was found but not registered");
                 // Ignore others
                 continue;
             }

@@ -5,6 +5,7 @@ public class ScreenView : MonoBehaviour, IScreenView
     [SerializeField]
     private UIScreenType _screenType;
 
+    [SerializeField]
     private bool _isVisible = false;
 
     public UIScreenType ScreenType => _screenType;
